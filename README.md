@@ -18,8 +18,15 @@ If an empty tree (no argument) is passed to the method, it should return an empt
 # STYLISTIC CHOICES
 
 I have aimed for readability over brevity in this solution. Namely, I have left in return statements
-and used .nil? queries instead of shorter truthiness checks. For eample 'unless current_node.left.nil?'
-could be shortened to 'if current.node.left' but I believe this is less readable.
+and used .nil? queries instead of shorter truthiness checks. For eample:
+
+nodes << current_node.left unless current_node.left.nil?
+
+could be shortened to:
+
+if current_node.left'
+
+but I believe this is less readable.
 
 # TESTS
 
