@@ -1,7 +1,6 @@
 require 'rspec'
 require_relative 'tree_by_levels'
 
-
 RSpec.describe "method passed empty tree (no argument)" do
   it 'should return empty array' do
     result = tree_by_levels()
